@@ -1,0 +1,15 @@
+library(twitteR)
+library(tm)
+library(SnowballC)
+library(syuzhet)
+consumer_key <- "ZLX0zDj47f35gmRlPDmyxqLuJ"
+consumer_secret<- "aWawo7GN7SJxFS1X8NBrJDpe4UuOZicQUzVEtf23AK6D6JJUr7"
+access_token <- "107991817-ekKpeILEER2GrZaIr3H51uBMsTDYIL6CTtAi2xiD"
+access_secret <- "iHlVgWV6TPF20AlmqZaAUyGDvCULXEUyMIr0L1jCRWwzA"
+setup_twitter_oauth(consumer_key ,consumer_secret,access_token ,access_secret)
+
+tweets <- twitteR::homeTimeline(n = 20 )
+tweets.df <- twListToDF(tweets)
+head(tweets.df)
+tweets.df$text
+sessioni

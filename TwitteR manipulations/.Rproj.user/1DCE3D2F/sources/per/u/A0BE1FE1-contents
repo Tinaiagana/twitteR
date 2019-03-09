@@ -1,0 +1,6 @@
+hello <- data.frame(iris)
+library(devtools)
+session.info
+session.info()
+sessionInfo()
+library(KernSmooth)
